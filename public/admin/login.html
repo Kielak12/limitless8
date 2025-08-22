@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel — Limitless Web</title>
+  <meta name="theme-color" content="#0b1221">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/script.js" defer></script>
+  <script src="../js/admin.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Limitless Web — strona główna">
+        <img src="assets/logo.svg" alt="" width="36" height="36" loading="eager">
+        <span>Limitless <strong>Web</strong></span>
+      </a>
+      <nav class="nav" aria-label="Główne">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Otwórz menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#proces">Jak pracujemy</a></li>
+          <li><a href="#realizacje">Realizacje</a></li>
+          <li><a href="#opinie">Opinie</a></li>
+          <li><a href="#cennik">Warianty</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-primary btn-small" href="#kontakt">Wyceń projekt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="section container">
+    <header class="section-head">
+      <h2>Logowanie do panelu</h2>
+      <p>Wpisz dane dostępu, aby zobaczyć zgłoszenia z formularza wyceny.</p>
+    </header>
+    <form id="login-form" class="card form-card" aria-label="Logowanie">
+      <div class="form-row">
+        <label for="u">Login</label>
+        <input id="u" name="username" type="text" placeholder="123" required>
+      </div>
+      <div class="form-row">
+        <label for="p">Hasło</label>
+        <input id="p" name="password" type="password" placeholder="123" required>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Zaloguj</button>
+        <span id="login-status" role="status" aria-live="polite"></span>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <address class="footer-contact"><strong>Limitless Web</strong><br><a href="mailto:kontakt@limitless-web.pl">kontakt@limitless-web.pl</a><br><a href="tel:+48600000000">+48 600 000 000</a></address>
+      <p>© 2025 Limitless Web — wszystkie prawa zastrzeżone.</p>
+      <a href="#top" class="back-to-top" aria-label="Wróć na górę">↑</a>
+    </div>
+  </footer>
+</body>
+</html>
