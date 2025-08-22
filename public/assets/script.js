@@ -66,7 +66,7 @@ $$('.choose-plan').forEach(btn=>{
 // ====== Lead form logic ======
 // 1) Jeśli ustawisz FORMSPREE_ENDPOINT, wyśle przez fetch.
 // 2) W przeciwnym razie zbuduje mailto do kontakt@limitless-web.pl.
-const FORMSPREE_ENDPOINT = ""; // <- Wstaw endpoint Formspree, np. "https://formspree.io/f/xyzabcd"
+const FORMSPREE_ENDPOINT = "/api/quotes"; // <- Wstaw endpoint Formspree, np. "https://formspree.io/f/xyzabcd"
 const form = $('#lead-form');
 const statusEl = $('#form-status');
 
